@@ -201,6 +201,7 @@ cc_library_shared {
 cc_library_shared {
     name: "libblasV8",
     defaults: ["cblas-defaults"],
+    system_ext_specific: true,
     sdk_version: "9",
     stl: "c++_static",
     ldflags: [
